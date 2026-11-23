@@ -1,0 +1,6 @@
+{
+  "name": "NégoCoach — Alphabette",
+  "description": "Simulateur d'entraînement rapide à la négociation à fort enjeu avec jauge de réceptivité en direct, souffleur tactique, mode vocal et fiche anti-sèche.",
+  "requestFramePermissions": ["microphone"],
+  "majorCapabilities": ["MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"]
+}

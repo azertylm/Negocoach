@@ -1,0 +1,62 @@
+@import "tailwindcss";
+@custom-variant dark (&:where(.dark, .dark *));
+
+@layer base {
+  :root {
+    --font-sans: 'Plus Jakarta Sans', -apple-system, BlinkMacSystemFont, sans-serif;
+    --font-display: 'Fraunces', Georgia, serif;
+    --font-mono: 'JetBrains Mono', monospace;
+  }
+
+  html {
+    font-size: 16px;
+    font-family: var(--font-sans);
+  }
+
+  body {
+    margin: 0;
+    padding: 0;
+    overflow-x: hidden;
+  }
+}
+
+.font-display {
+  font-family: var(--font-display);
+}
+
+.font-mono-tabular {
+  font-family: var(--font-mono);
+  font-variant-numeric: tabular-nums;
+}
+
+/* Mode BIG isolation: only scales content inside .nego-main-content, never the fixed-px Double Bar */
+.nego-big-mode {
+  font-size: 20px !important;
+  line-height: 1.65 !important;
+}
+
+.nego-big-mode .nego-text-scale-sm {
+  font-size: 17px !important;
+}
+
+.nego-big-mode .nego-text-scale-base {
+  font-size: 20px !important;
+}
+
+.nego-big-mode .nego-text-scale-lg {
+  font-size: 23px !important;
+}
+
+.nego-big-mode .nego-text-scale-xl {
+  font-size: 28px !important;
+}
+
+@media print {
+  .no-print {
+    display: none !important;
+  }
+  body {
+    background: #ffffff !important;
+    color: #0f172a !important;
+  }
+}
